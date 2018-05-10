@@ -23,7 +23,7 @@ public class rollingDice : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
-        {
+        {        
             Dicetimer = 2f;
             isRolling = true;
             sc.enabled = true;

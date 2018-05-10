@@ -27,6 +27,7 @@ public class gameSystem : MonoBehaviour {
         newTile.localScale = Vector3.one * (1 - outlineSize);
         newTile.parent = mapHolder;
         
+        
 
 
         for (int x = 1; x < Mapsize; x++)
