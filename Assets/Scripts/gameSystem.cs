@@ -39,7 +39,7 @@ public class gameSystem : MonoBehaviour {
                 newTile = Instantiate(tiles[randomnum], position, Quaternion.Euler(Vector3.right * 90)) as Transform;
                 newTile.localScale = Vector3.one * (1 - outlineSize );
                 newTile.parent = mapHolder;
-                print(randomnum);
+                //print(randomnum);
             }
         }
     }
