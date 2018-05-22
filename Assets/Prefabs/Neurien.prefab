@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23064454244080618}
   - component: {fileID: 65433627989485570}
   - component: {fileID: 114985710926774840}
+  - component: {fileID: 114894812037848274}
   m_Layer: 0
   m_Name: Neurien
   m_TagString: Neurien
@@ -97,6 +98,17 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000002, z: 0.06162904}
   m_Center: {x: 0, y: -1.1063865e-17, z: -0.014846446}
+--- !u!114 &114894812037848274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1400360126167084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5142870af7427dd429eab881ded976b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114985710926774840
 MonoBehaviour:
   m_ObjectHideFlags: 1

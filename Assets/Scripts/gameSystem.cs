@@ -7,28 +7,43 @@ public class gameSystem : MonoBehaviour {
     // Use this for initialization
     public int Mapsize;
     public float outlineSize;
-    //public Transform TilePrefab;
     public Transform[] tiles;
     public Transform StartTile;
+    public Camera[] cameras;
+    public int count = 0;
     
-
-
     void Start () {
-        
         MapGenererator();
 	}
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            count++;
+            if (count >= cameras.Length)
+            {
+                count = 0;
+            }
+            for (int i = 0; i < cameras.Length; i++)
+            {
+                cameras[i].enabled = false;  
+            }
+            cameras[count].enabled = true;
+            
+            
+        }
+    }
+
     void MapGenererator()
     {
         string holderName = "Map";
         Transform mapHolder = new GameObject(holderName).transform;
         mapHolder.parent = transform;
-        Vector3 position = new Vector3(-Mapsize / 2 + 0.5f + 1, 0, -Mapsize / 2 + 0.5f + 0);
-        Transform newTile = Instantiate(StartTile, position, Quaternion.Euler(Vector3.right * 90)) as Transform;
+        Vector3 position = new Vector3(-Mapsize / 2 + -0.5f + 1, 0, -Mapsize / 2 + 1.5f + 0);
+        Transform newTile = Instantiate(StartTile, position, Quaternion.Euler(90, 0 ,270)) as Transform;
         newTile.localScale = Vector3.one * (1 - outlineSize);
         newTile.parent = mapHolder;
-        
-        
-
 
         for (int x = 1; x < Mapsize; x++)
         {
@@ -39,8 +54,17 @@ public class gameSystem : MonoBehaviour {
                 newTile = Instantiate(tiles[randomnum], position, Quaternion.Euler(Vector3.right * 90)) as Transform;
                 newTile.localScale = Vector3.one * (1 - outlineSize );
                 newTile.parent = mapHolder;
-                //print(randomnum);
             }
         }
     }
+    public Camera getCurrentCamera()
+    {
+        return cameras[count];
+    }
+    public Vector2 getTileID(float i, float j)
+    {
+        Vector2 TileID = new Vector2(i,j);
+        return TileID;
+    }
+
 }
