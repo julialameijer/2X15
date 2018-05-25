@@ -11,7 +11,8 @@ public class gameSystem : MonoBehaviour {
     public Transform StartTile;
     public Camera[] cameras;
     public int count = 0;
-    
+    private tileScript tileScript;
+
     void Start () {
         MapGenererator();
 	}
@@ -61,10 +62,6 @@ public class gameSystem : MonoBehaviour {
     {
         return cameras[count];
     }
-    public Vector2 getTileID(float i, float j)
-    {
-        Vector2 TileID = new Vector2(i,j);
-        return TileID;
-    }
+
 
 }

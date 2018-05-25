@@ -8,6 +8,7 @@ public class rollingDice : MonoBehaviour {
     bool isRolling = false;
     public ForceMode forcemode;
     public Rigidbody rb;
+    public GameObject floor;
     SphereCollider sc;
     BoxCollider bc;
 
@@ -23,20 +24,19 @@ public class rollingDice : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         if (Input.GetKeyDown(KeyCode.Space))
-        {        
+        {
             Dicetimer = 2f;
+
             isRolling = true;
             sc.enabled = true;
             bc.enabled = false;
             Vector3 randomUnit = Random.onUnitSphere;
             rb.AddForce(randomUnit * forceStrenght, forcemode);
             rb.AddTorque(randomUnit * torqueStrenght, forcemode);
-            print(randomUnit);
         }
         if (Dicetimer > 0 && isRolling == true)
         {
             Dicetimer -= Time.deltaTime;
-            
         }
         else
         {
@@ -45,7 +45,10 @@ public class rollingDice : MonoBehaviour {
             bc.enabled = true;
         }
     }
+
+    
 }
+
 
 
     

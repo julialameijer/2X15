@@ -32,7 +32,7 @@ public class Player : MonoBehaviour {
 
         }
         else if (col.gameObject.CompareTag("Uitbeelden")){
-           // print(col.gameObject.tag);
+            //print(col.gameObject.tag);
         }
         else if (col.gameObject.CompareTag("Opdracht"))
         {

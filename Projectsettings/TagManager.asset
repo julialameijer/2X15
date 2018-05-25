@@ -9,6 +9,10 @@ TagManager:
   - Uitbeelden
   - Uitleggen
   - Zoeken
+  - 0
+  - 1
+  - 2
+  - Floor
   layers:
   - Default
   - TransparentFX
