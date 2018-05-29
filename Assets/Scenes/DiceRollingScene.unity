@@ -231,7 +231,6 @@ GameObject:
   - component: {fileID: 415984994}
   - component: {fileID: 415984993}
   - component: {fileID: 415984992}
-  - component: {fileID: 415984996}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Floor
@@ -308,17 +307,6 @@ Transform:
   m_Father: {fileID: 1975237904}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!114 &415984996
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 415984991}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e7ed9dfb17a49643a70c67c8eb82e39, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &689128869
 GameObject:
   m_ObjectHideFlags: 0

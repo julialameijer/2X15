@@ -2,8 +2,8 @@
 using UnityEngine;
 
 public class rollingDice : MonoBehaviour {
-    public float forceStrenght;
-    public float torqueStrenght;
+    float forceStrenght = 20;
+    float torqueStrenght = 15;
     public float Dicetimer = 2f;
     bool isRolling = false;
     public ForceMode forcemode;

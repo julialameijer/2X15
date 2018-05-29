@@ -371,7 +371,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Mapsize: 7
-  outlineSize: 0.04
   tiles:
   - {fileID: 4849697000918604, guid: 8bc29612356998f45803f83eabbe3cdf, type: 2}
   - {fileID: 4937629917000762, guid: d84d2578da794d64998266196d8a8b17, type: 2}
@@ -382,7 +381,6 @@ MonoBehaviour:
   cameras:
   - {fileID: 705291698}
   - {fileID: 1497778240}
-  count: 0
 --- !u!4 &1282112020
 Transform:
   m_ObjectHideFlags: 0

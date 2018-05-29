@@ -11,7 +11,7 @@ public class tileScript : MonoBehaviour {
         
         gsScript = GameObject.FindObjectOfType<gameSystem>();
         tileID = getTileID(this.transform.position.x, this.transform.position.z);
-        print(tileID + " " + this.tag);
+        //print(tileID + " " + this.tag);
         TileIDStorage.Add(this.tileID);
     }
 	
