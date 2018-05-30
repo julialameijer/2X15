@@ -14,20 +14,11 @@ public class tileScript : MonoBehaviour {
         //print(tileID + " " + this.tag);
         TileIDStorage.Add(this.tileID);
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 
-
-    public void checkTile(Player player)
+    // Update is called once per frame
+    void Update()
     {
-        if(this.transform.position == player.transform.position)
-        {
 
-        }
-        
     }
 
     public Vector2 getTileID(float i, float j)
