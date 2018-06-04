@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public GameObject gameManager;
-    public Vector3 currentTilePos;
+    public GameObject currentTile;
     private gameSystem gsScript;
 
     // Use this for initialization
@@ -27,26 +27,11 @@ public class Player : MonoBehaviour {
 
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.CompareTag("Uitleggen")){
+        if (col.gameObject.CompareTag("Uitleggen") || col.gameObject.CompareTag("Uitbeelden") || col.gameObject.CompareTag("Opdracht") || col.gameObject.CompareTag("Neurien") || col.gameObject.CompareTag("Zoeken"))
+        {
 
-            currentTilePos = col.gameObject.transform.position;
+            currentTile.transform.position = col.gameObject.transform.position;
         }
-        else if (col.gameObject.CompareTag("Uitbeelden")){
-            currentTilePos = col.gameObject.transform.position;   
-        }
-        else if (col.gameObject.CompareTag("Opdracht"))
-        {
-            currentTilePos = col.gameObject.transform.position; 
-        }
-        else if (col.gameObject.CompareTag("Neurien"))
-        {
-            currentTilePos = col.gameObject.transform.position;
-        }
-        else if (col.gameObject.CompareTag("Zoeken"))
-        {
-            currentTilePos = col.gameObject.transform.position;
-        }
-
     }
 
 }

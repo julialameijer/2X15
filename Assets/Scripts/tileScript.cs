@@ -6,13 +6,17 @@ public class tileScript : MonoBehaviour {
     Vector2 tileID = new Vector2(0, 0);
     public List<Vector2> TileIDStorage;
     private gameSystem gsScript;
+    public Transform nextTile;
+
+
     // Use this for initialization
     void Start () {
-        
+
         gsScript = GameObject.FindObjectOfType<gameSystem>();
         tileID = getTileID(this.transform.position.x, this.transform.position.z);
         //print(tileID + " " + this.tag);
         TileIDStorage.Add(this.tileID);
+        print(nextTile);    
     }
 
     // Update is called once per frame

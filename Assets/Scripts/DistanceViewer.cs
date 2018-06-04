@@ -19,7 +19,6 @@ public class DistanceViewer : MonoBehaviour {
         float distance = 0;
             if (Physics.Raycast(c.transform.position, Vector3.down, out hit))
             {
-                
                 distance = c.transform.position.y - hit.transform.position.y;
             }
         return distance;

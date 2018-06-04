@@ -4,11 +4,11 @@ using UnityEngine;
 public class rollingDice : MonoBehaviour {
     float forceStrenght = 20;
     float torqueStrenght = 15;
-    public float Dicetimer = 2f;
     bool isRolling = false;
     public ForceMode forcemode;
-    public Rigidbody rb;
     public GameObject floor;
+    public Rigidbody rb;
+    public float Dicetimer = 2f;
     SphereCollider sc;
     BoxCollider bc;
 
