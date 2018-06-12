@@ -5,8 +5,9 @@ using UnityEngine;
 public class diceChecker : MonoBehaviour
 {
     private rollingDice rd;
-    string points;
-    int thrownPoints = 0;
+    public string points; 
+    public int thrownPoints = 0;
+    
     // Use this for initialization
     void Start()
     {
@@ -18,7 +19,7 @@ public class diceChecker : MonoBehaviour
     void Update()
     {
     }
-    void OnTriggerEnter(Collider col)
+     void OnTriggerEnter(Collider col)
     {
         if(rd.Dicetimer <= 0)
         {

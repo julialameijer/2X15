@@ -1,14 +1,15 @@
 ﻿using System.Collections;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class rollingDice : MonoBehaviour {
     float forceStrenght = 20;
     float torqueStrenght = 15;
     bool isRolling = false;
+    bool isPressed = false;
     public ForceMode forcemode;
     public GameObject floor;
     public Rigidbody rb;
-    public float Dicetimer = 2f;
+    public float Dicetimer = 0f;
     SphereCollider sc;
     BoxCollider bc;
 
@@ -23,16 +24,21 @@ public class rollingDice : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!isPressed)
         {
-            Dicetimer = 2f;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                isPressed = true;
+                Dicetimer = 2f;
 
-            isRolling = true;
-            sc.enabled = true;
-            bc.enabled = false;
-            Vector3 randomUnit = Random.onUnitSphere;
-            rb.AddForce(randomUnit * forceStrenght, forcemode);
-            rb.AddTorque(randomUnit * torqueStrenght, forcemode);
+                isRolling = true;
+                sc.enabled = true;
+                bc.enabled = false;
+                Vector3 randomUnit = Random.onUnitSphere;
+                rb.AddForce(randomUnit * forceStrenght, forcemode);
+                rb.AddTorque(randomUnit * torqueStrenght, forcemode);
+            }
+            
         }
         if (Dicetimer > 0 && isRolling == true)
         {
@@ -43,7 +49,13 @@ public class rollingDice : MonoBehaviour {
             isRolling = false;
             sc.enabled = false;
             bc.enabled = true;
+            if (isPressed && Dicetimer <= 0)
+            {
+                SceneManager.LoadScene(2);
+            }
+            
         }
+
     }
 
     

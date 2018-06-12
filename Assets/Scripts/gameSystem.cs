@@ -6,7 +6,7 @@ public class gameSystem : MonoBehaviour {
     //The gamesystem class does count the points of the teams, and builds the grid for the board. 
     // Use this for initialization
     public int Mapsize;
-    float outlineSize;
+    public float outlineSize;
     public Transform[] tiles;
     public Transform StartTile;
     public Camera[] cameras;
@@ -61,6 +61,11 @@ public class gameSystem : MonoBehaviour {
     public Camera getCurrentCamera()
     {
         return cameras[count];
+    }
+
+    public void turns()
+    {
+        
     }
 
 

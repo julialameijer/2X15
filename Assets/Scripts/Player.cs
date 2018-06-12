@@ -5,12 +5,17 @@ using UnityEngine;
 public class Player : MonoBehaviour {
 
     public GameObject gameManager;
-    public GameObject currentTile;
+    public Transform currentTile;
     private gameSystem gsScript;
+    private diceChecker dc;
+    private tileScript ts;
 
     // Use this for initialization
     void Start () {
         gsScript = GameObject.FindObjectOfType<gameSystem>();
+        dc = GameObject.FindObjectOfType<diceChecker>();
+        int points = dc.thrownPoints;
+        print(points);
     }
 
     // Update is called once per frame
@@ -22,7 +27,7 @@ public class Player : MonoBehaviour {
        if (Input.GetMouseButton(0))
         {
           this.transform.position = Mousepos;
-        }
+        }   
     }
 
     void OnCollisionEnter(Collision col)
@@ -33,5 +38,7 @@ public class Player : MonoBehaviour {
             currentTile.transform.position = col.gameObject.transform.position;
         }
     }
+
+
 
 }
