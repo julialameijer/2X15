@@ -15,13 +15,15 @@ public class gameSystem : MonoBehaviour {
 
     void Start () {
         MapGenererator();
-	}
+        
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             count++;
+            //print(count);
             if (count >= cameras.Length)
             {
                 count = 0;

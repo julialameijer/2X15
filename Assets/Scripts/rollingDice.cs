@@ -10,6 +10,7 @@ public class rollingDice : MonoBehaviour {
     public GameObject floor;
     public Rigidbody rb;
     public float Dicetimer = 0f;
+    public float loadTime = 3f;
     SphereCollider sc;
     BoxCollider bc;
 
@@ -46,10 +47,12 @@ public class rollingDice : MonoBehaviour {
         }
         else
         {
-            isRolling = false;
+            loadTime -= Time.deltaTime;
+            isRolling = false;  
             sc.enabled = false;
             bc.enabled = true;
-            if (isPressed && Dicetimer <= 0)
+
+            if (isPressed && loadTime <= 0)
             {
                 SceneManager.LoadScene(2);
             }

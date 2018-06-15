@@ -7,26 +7,28 @@ public class Player : MonoBehaviour {
     public GameObject gameManager;
     public Transform currentTile;
     private gameSystem gsScript;
-    private diceChecker dc;
+    //private diceChecker dc;
     private tileScript ts;
+    public static int points;
 
     // Use this for initialization
     void Start () {
         gsScript = GameObject.FindObjectOfType<gameSystem>();
-        dc = GameObject.FindObjectOfType<diceChecker>();
-        int points = dc.thrownPoints;
-        print(points);
+        points = diceChecker.thrownPoints;
+        print(points + " player");
     }
 
     // Update is called once per frame
     void Update() {
         float distance = DistanceViewer.getDistance(gsScript.getCurrentCamera());
         Vector3 Mousepos = gsScript.getCurrentCamera().ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, (distance - 0.4f)));
-        
-
        if (Input.GetMouseButton(0))
         {
-          this.transform.position = Mousepos;
+            if (gsScript.cameras[0].enabled)
+            {
+                this.transform.position = Mousepos;
+            }
+         
         }   
     }
 
@@ -34,8 +36,9 @@ public class Player : MonoBehaviour {
     {
         if (col.gameObject.CompareTag("Uitleggen") || col.gameObject.CompareTag("Uitbeelden") || col.gameObject.CompareTag("Opdracht") || col.gameObject.CompareTag("Neurien") || col.gameObject.CompareTag("Zoeken"))
         {
-
-            currentTile.transform.position = col.gameObject.transform.position;
+            print(col.gameObject.tag);
+            //this.currentTile = col.gameObject.transform;
+            
         }
     }
 

@@ -6,11 +6,13 @@ public class diceChecker : MonoBehaviour
 {
     private rollingDice rd;
     public string points; 
-    public int thrownPoints = 0;
+    public static int thrownPoints = 0;
+    public Collider col;    
     
     // Use this for initialization
     void Start()
     {
+        Collider col = GetComponent<Collider>();
         points = this.tag;
         rd = GameObject.FindObjectOfType<rollingDice>();
     }
@@ -21,12 +23,13 @@ public class diceChecker : MonoBehaviour
     }
      void OnTriggerEnter(Collider col)
     {
-        if(rd.Dicetimer <= 0)
+        if(rd.Dicetimer <= -0.005)
         {
             if (col.gameObject.CompareTag("Floor"))
             {
                 thrownPoints = int.Parse(points);
-                print(thrownPoints);
+                print(thrownPoints + "dicescript");
+                
             }
         }
     }
