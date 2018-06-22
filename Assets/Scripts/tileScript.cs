@@ -26,10 +26,4 @@ public class tileScript : MonoBehaviour {
         Vector2 TileID = new Vector2(i, j);
         return TileID;
     }
-
-    public Transform NextTile()
-    {
-        int thisIndex = this.transform.GetSiblingIndex();
-        return this.transform.parent.GetChild(thisIndex + 1);
-    }
 }

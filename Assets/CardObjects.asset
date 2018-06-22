@@ -12,7 +12,178 @@ MonoBehaviour:
   m_Name: CardObjects
   m_EditorClassIdentifier: 
   Uitleggen: []
-  Uitbeelden: []
-  OpdrachtUitvoeren: []
-  ObjectZoeken: []
+  Uitbeelden:
+  - Fietsen
+  - Koken
+  - Zwemmen
+  - Potje kaarten
+  - Voetballen
+  - Verstoppen
+  - Vliegen
+  - Autorijden
+  - Booschappen doen
+  - Tuinieren
+  - Varen
+  - Eten
+  - Aanbellen
+  - Nadenken
+  - Hond aaien
+  - Knuffelen
+  - Been breken
+  - Hand schudden
+  - Volleyballen
+  - Wassen
+  - Tekenen
+  - Darten
+  - Rekenen
+  - Nadenken
+  - Speerwerpen
+  - Kogelstoten
+  - Basketballen
+  - Surfen
+  - Zingen
+  - Gamen
+  - Vechten
+  - Fotograferen
+  - Tegelzetten
+  - Acteren
+  - Dansen
+  - Gillen/Schreeuwen
+  - Drinken
+  - Piano spelen
+  - Gitaar spelen
+  - Bouwen
+  - Koffer inpakken
+  - Cadeau inpakken
+  - Tanden poetsen
+  - Haar borstelen
+  - Gezicht wassen
+  - Douchen
+  - Boogschieten
+  - Handen wassen
+  - Schoenen poetsen
+  - Klimmen
+  - Roeien
+  - Bellen
+  - Bij kampvuur zitten
+  - Deur openmaken
+  - Cake bakken
+  - Hardlopen
+  - Stelen
+  - Feesten
+  - Trompet spelen
+  - Bierflesje openen
+  - Vissen
+  - Paardrijden
+  - Zoenen
+  - Hockey
+  - Yoga
+  - Golf
+  - Trampolinespringen
+  - Vloggen
+  - Verfen
+  - Schilderen
+  - Smeken
+  - Pistool afvuren
+  - Naar de tandarts gaan
+  - Bloedprikken
+  - Scheren
+  - Vakkenvullen
+  - Achter de kassa zitten
+  - Afwassen
+  - Bedienen
+  - Grasmaaien
+  - Kussengevecht
+  - Stofzuigen
+  - Lassen
+  - Werken in de bouw
+  - 'Brandweerman '
+  - Politieagent
+  - Ambulancemedewerker
+  - Zandkasteel bouwen
+  - Vliegeren
+  - Racen
+  - Gewichtheffen
+  - Haar vlechten
+  - Slapen
+  - Trouwen
+  - Film kijken
+  - Picknicken
+  - Onderhandelen
+  - Ziek zijn
+  - Bij een concert zijn
+  - Schrijven
+  OpdrachtUitvoeren:
+  - Ren binnen 30 seconden een rondje om het huis.
+  - Dans 30 seconden op muziek naar keuze
+  - Wissel binnen 30 seconden van shirt met je teamgenoot
+  - Druk binnen 30 seconden 10x op.
+  - Schenk binnen 30 seconden voor iedereen wat te drinken in.
+  - 'Zeg binnen 30 seconden het alfabet 3x op. '
+  - 'Doe 30 seconden lang iemand die meedoet na. '
+  - 'Zeg binnen 30 seconden 3x foutloos: "Achtentachtig prachtige grachten". '
+  - Noem binnen 30 seconden 3 dingen die je kunt doen met een lepel
+  - Noem binnen 30 seconden 3 dingen die je kunt doen met een broodtrommel.
+  - 'Dans 30 seconden lang de macarena. '
+  - Ren binnen 30 seconden van beneden naar boven en weer terug.
+  - Smeer binnen 30 seconden een broodje.
+  - Noem binnen 30 seconden 10 soorten broodbeleg.
+  - Noem binnen 30 seconden 10 voetbalclubs op.
+  - Geef iedereen aan tafel binnen 30 seconden een knuffel
+  - Sta 30 seconden op 1 been.
+  - Bedenk een gedicht binnen 30 seconden, van minstens 4 regels.
+  - 'Vertel een verhaal, binnen 30 seconden, met de woorden: "Prinses", "Boerderij",
+    "Arme mensen" en de naam van je teamgenoot.'
+  - Draai 10 rondjes.
+  ObjectZoeken:
+  - ronds
+  - vierkants
+  - met een exentrieke vorm
+  - roods
+  - blauws
+  - geels
+  - oranjes
+  - zwarts
+  - wat stroom verbruikt
+  - wits
+  - wat waterdicht is
+  - kouds
+  - warms
+  - lichts
+  - zwaars
+  - ruws
+  - glads
+  - zachts
+  - wat van plastic gemaakt is
+  - wat van glas gemaakt is
+  - wat met natuur te maken heeft
+  - groots
+  - kleins
+  - wat geluid maakt
+  - groens
+  - opvallends
+  - praktisch
+  - langs
+  - breeds
+  - breekbaars
+  - slaps
+  - van stof
+  - waar je mee kan schrijven
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   MuziekRaden: []

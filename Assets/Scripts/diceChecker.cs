@@ -23,7 +23,7 @@ public class diceChecker : MonoBehaviour
     }
      void OnTriggerEnter(Collider col)
     {
-        if(rd.Dicetimer <= -0.005)
+        if(rd.Dicetimer <= 0)
         {
             if (col.gameObject.CompareTag("Floor"))
             {

@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 public class rollingDice : MonoBehaviour {
     float forceStrenght = 20;
     float torqueStrenght = 15;
-    bool isRolling = false;
-    bool isPressed = false;
+    public bool isRolling = false;
+    public bool isPressed = false;
+    public static bool isFinished = false;
     public ForceMode forcemode;
     public GameObject floor;
     public Rigidbody rb;
     public float Dicetimer = 0f;
-    public float loadTime = 3f;
+    public float loadTime = 5f;
     SphereCollider sc;
     BoxCollider bc;
 
@@ -31,7 +32,7 @@ public class rollingDice : MonoBehaviour {
             {
                 isPressed = true;
                 Dicetimer = 2f;
-
+                
                 isRolling = true;
                 sc.enabled = true;
                 bc.enabled = false;
@@ -47,17 +48,21 @@ public class rollingDice : MonoBehaviour {
         }
         else
         {
-            loadTime -= Time.deltaTime;
+            
             isRolling = false;  
             sc.enabled = false;
-            bc.enabled = true;
-
-            if (isPressed && loadTime <= 0)
+            bc.enabled = true;  
+        }
+        if (loadTime >= 0 && isPressed)
+        {
+            loadTime -= Time.deltaTime;
+            if (loadTime <= 0)
             {
+                isFinished = true;
                 SceneManager.LoadScene(2);
             }
-            
         }
+
 
     }
 
