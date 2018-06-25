@@ -13,6 +13,5 @@ public class cardScript : ScriptableObject {
 
     // Use this for initialization
     void Start () {
-        
 	}
 }

@@ -36,7 +36,7 @@ public class gameSystem : MonoBehaviour {
             cameras[count].enabled = true;
             
             
-        }
+        } 
     }
 
     void MapGenererator()

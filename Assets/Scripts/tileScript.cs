@@ -13,7 +13,8 @@ public class tileScript : MonoBehaviour {
 
         gsScript = GameObject.FindObjectOfType<gameSystem>();
         tileID = getTileID(this.transform.position.x, this.transform.position.z);
-        TileIDStorage.Add(this.tileID);    }
+        TileIDStorage.Add(this.tileID);
+    }
 
     // Update is called once per frame
     void Update()

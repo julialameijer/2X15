@@ -62,8 +62,6 @@ public class rollingDice : MonoBehaviour {
                 SceneManager.LoadScene(2);
             }
         }
-
-
     }
 
     
