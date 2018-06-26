@@ -6,13 +6,11 @@ public class diceChecker : MonoBehaviour
 {
     private rollingDice rd;
     public string points; 
-    public static int thrownPoints = 0;
-    public Collider col;    
+    public static int thrownPoints = 0;    
     
     // Use this for initialization
     void Start()
     {
-        Collider col = GetComponent<Collider>();
         points = this.tag;
         rd = GameObject.FindObjectOfType<rollingDice>();
     }

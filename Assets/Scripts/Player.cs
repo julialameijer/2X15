@@ -16,7 +16,6 @@ public class Player : MonoBehaviour
     public static int points;
     public static bool diceIsDone;
 
-    // Use this for initialization
     void Start()
     {
         cs = GameObject.FindObjectOfType<cardScript>();
